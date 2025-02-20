@@ -1,0 +1,84 @@
+# -----------------------
+# Python Artifacts
+# -----------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.egg
+*.egg-info
+dist/
+build/
+
+# -----------------------
+# Virtual Environments
+# -----------------------
+env/
+venv/
+.venv/
+
+# Poetry virtualenv
+.poetry/
+
+# Pipenv
+Pipfile.lock
+
+# -----------------------
+# Logs and temp files
+# -----------------------
+*.log
+*.out
+*.tmp
+
+# -----------------------
+# FastAPI / Uvicorn
+# -----------------------
+# If you generate Uvicorn logs or other runtime artifacts:
+uvicorn.log
+gunicorn.log
+
+# -----------------------
+# IDE / Editor Directories
+# -----------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -----------------------
+# Testing / Coverage
+# -----------------------
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.pytest_cache/
+
+# -----------------------
+# MyPy
+# -----------------------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# -----------------------
+# Environment & Config
+# -----------------------
+.env
+.env.*
+.envrc
+.venvrc
+
+# -----------------------
+# Docker
+# -----------------------
+# If using Docker, ignore build artifacts and containers
+docker-compose.override.yml
+docker-compose.*.yml
+*.pid
+*.seed
+*.pid.lock
