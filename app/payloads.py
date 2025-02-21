@@ -12,24 +12,27 @@ _TOKEN = load_tokens()["_token"]
 APPINFO_PAYLOAD = {
     "_token": _TOKEN,
     "highcom": "3",
-    "webfile_id": "BGDRV175B225",
-    "webfile_id_repeat": "BGDRV175B225",
+    "webfile_id": "BGDRV01B1025",
+    "webfile_id_repeat": "BGDRV01B1025",
     "ivac_id": "2",
-    "visa_type": "6",
+    "visa_type": "2",
     "family_count": "0",
-    "visit_purpose": "for a vacation"
+    "visit_purpose": "for higher study"
 }
 
 # Example payload for perinfo
 PERINFO_PAYLOAD = {
     "_token": _TOKEN,
-    "full__name": "Salman farsi",
-    "email_name": "salman.farsi4646@outlook.com",
-    "pho_ne": "01729469778",
+    "full__name": "MD RASHEDUL ISLAM",
+    "email_name": "parosh.cse@gmail.com",
+    "pho_ne": "01766283131",
     # If you have family fields:
-    # "family[1][name]": "Jane Doe",
-    # "family[1][webfile_no]": "123",
-    # "family[1][again_webfile_no]": "123"
+    # "family[1][name]": "SUSHANTO BAPARY",
+    # "family[1][webfile_no]": "BGDKV01B1625",
+    # "family[1][again_webfile_no]": "BGDKV01B1625",
+    # "family[2][name]": "METU RANI",
+    # "family[2][webfile_no]": "BGDKV01B1A25",
+    # "family[2][again_webfile_no]": "BGDKV01B1A25"
 }
 
 # Example payload for overview
@@ -52,13 +55,13 @@ VERIFYOTP_PAYLOAD = {
 # Example payload for slottime
 SLOTTIME_PAYLOAD = {
     "_token": _TOKEN,
-    "appointment_date": "2025-02-20"
+    "appointment_date": "2025-02-23"
 }
 
 # Example payload for paynow
 PAYNOW_PAYLOAD = {
     "_token": _TOKEN,
-    "appointment_date": "2025-02-20",
+    "appointment_date": "2025-02-23",
     "appointment_time": "10",
     "hash_param": "dgdfssdgdfgfdg"
 }

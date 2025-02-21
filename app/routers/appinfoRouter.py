@@ -34,6 +34,9 @@ class ApplicationInfo(BaseModel):
     visa_type: str
     family_count: str
     visit_purpose: str
+    
+
+    
 
 @router.post("/apinfo")
 def submit_application_info(payload: ApplicationInfo):

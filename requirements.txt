@@ -2,3 +2,5 @@ fastapi
 uvicorn
 cloudscraper
 pydantic
+aiohttp
+requests

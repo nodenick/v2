@@ -23,16 +23,21 @@ def load_tokens() -> Dict[str, str]:
         raise Exception("Tokens file is not a valid JSON.")
 
 class PersonalInfo(BaseModel):
-    """
-    No longer requires _token from the user.
-    We'll inject _token from tokens.json at runtime.
-    """
     full__name: str
     email_name: str
     pho_ne: str
     family_1_name: Optional[str] = Field(None, alias="family[1][name]")
     family_1_webfile_no: Optional[str] = Field(None, alias="family[1][webfile_no]")
     family_1_again_webfile_no: Optional[str] = Field(None, alias="family[1][again_webfile_no]")
+    
+    family_2_name: Optional[str] = Field(None, alias="family[2][name]")
+    family_2_webfile_no: Optional[str] = Field(None, alias="family[2][webfile_no]")
+    family_2_again_webfile_no: Optional[str] = Field(None, alias="family[2][again_webfile_no]")
+
+    class Config:
+        # You can optionally still allow extra fields if needed
+        extra = "allow"
+
 
 @router.post("/personal-info-submit")
 def submit_personal_info(payload: PersonalInfo):
